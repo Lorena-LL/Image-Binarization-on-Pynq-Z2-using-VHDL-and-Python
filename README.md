@@ -19,7 +19,7 @@ You will need to connect to the Pynq board. You can find more info about this [o
 After that you can run the code from the PSpart.py file and see the new generated image called pixels_new.bmp.
 
 ## To see the hardware implementation:
-To see the hardware implementation, you need to install vivado. I used the 2020.1 version (I tried using the 2024.1 version and encountered problems); therefore, I do not guarantee it will work on other versions. Download **harware.zip** and extract all files. Create a new project in vivado, add the source: **prag_axi4stream32.vhd** and the folder of the block design: hardware/**dsg_tested_component32**. Now you can open dsg_tested_component32 to look at the design.
+To see the hardware implementation, you need to install vivado. I used the 2020.1 version (I tried using the 2024.1 version and encountered problems); therefore, I do not guarantee it will work on other versions. Create a new project in vivado, add the source: **prag_axi4stream32.vhd** and the folder of the block design: **dsg_tested_component32** (to get the folder unzip the contents of the hardware/dsg_tested_component32.zip). Now you can open dsg_tested_component32 to look at the design.
 
 
 ## Acknowledgments
