@@ -9,16 +9,17 @@ The embedded system I designed takes **an image in the .bmp format with a color 
   <img src="pixels_new.bmp" alt="drawing" width="200"/> <br>
 </div>
 
-## How can I run the project?
-You will need to connect to the Pynq board. You can find more info about this [on this page](https://pynq.readthedocs.io/en/v2.2.1/getting_started/pynq_z2_setup.html). Once you have connected, access this link: [http://192.168.2.99:9090](http://192.168.2.99:9090) which will open Jupyter Notebook. Here add in the same folder the following:
+## To run the project:
+You will need to connect to the Pynq board. You can find more info about this [on this page](https://pynq.readthedocs.io/en/v2.2.1/getting_started/pynq_z2_setup.html). Once you have connected, access this link: [http://192.168.2.99:9090](http://192.168.2.99:9090) which will open Jupyter Notebook locally on the board. Here add in the same folder the following:
 - PSpart.py
 - pbi32_tested_prag_interr_v1.bit
 - pbi32_tested_prag_interr_v1.hwh
-- pixels.bmp
+- pixels.bmp <br>
+
 After that you can run the code from the PSpart.py file and see the new generated image called pixels_new.bmp.
 
-## I want to see the hardware implementation.
-To see the hardware implementation, you need to install vivado. I used the 2020.1 version (I tried using the 2024.1 version and encountered problems); therefore, I do not guarantee it will work on other versions. Create a new project, add the source: **prag_axi4stream32.vhd** and the folder of the block design: hardware/**dsg_tested_component32**. Now you can open dsg_tested_component32 in vivado to look at the design.
+## To see the hardware implementation:
+To see the hardware implementation, you need to install vivado. I used the 2020.1 version (I tried using the 2024.1 version and encountered problems); therefore, I do not guarantee it will work on other versions. Download **harware.zip** and extract all files. Create a new project in vivado, add the source: **prag_axi4stream32.vhd** and the folder of the block design: hardware/**dsg_tested_component32**. Now you can open dsg_tested_component32 to look at the design.
 
 
 ## Acknowledgments
